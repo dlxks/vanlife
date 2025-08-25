@@ -24,7 +24,7 @@ const Navbar = () => {
     localStorage.removeItem("user"); // if you stored user info
 
     // Redirect to login page
-    navigate("/login", { replace: true });
+    navigate("/", { replace: true });
   }
 
   return (

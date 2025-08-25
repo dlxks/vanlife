@@ -40,12 +40,12 @@ export interface UserData {
 }
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC5uIkHnq-7eJm9B4LeIM9fywer6Oiwbfw",
-  authDomain: "vanlife-14afe.firebaseapp.com",
-  projectId: "vanlife-14afe",
-  storageBucket: "vanlife-14afe.firebasestorage.app",
-  messagingSenderId: "350458088805",
-  appId: "1:350458088805:web:6f4483d6db56171447a58c"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
